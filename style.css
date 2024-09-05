@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgba(241, 241, 14, 0.754);
+    color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: skyblue;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-style: oblique;
+    color: darkblue;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#btn{
+    background-color: rgba(120, 188, 16, 0.85);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#btn:hover{
+    background-color: rgb(14, 104, 14);
+    color: rgba(245, 245, 245, 0.8);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: 20px 0;
+}
+
+.card{
+    background-color: orange;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    border: 1.5px solid orangered;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+}
+
+.revealed{
+    background-color: greenyellow;
+    transform: rotateY(180deg);
+}
